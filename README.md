@@ -46,3 +46,7 @@
 ---
 reference
 * [해커의관점에서 바라보기 Naver D2 2018](https://www.slideshare.net/deview/131-119007645)
+
+---
+
+구글해킹 : intitle 관리자 페이지 inurl /admin/ (이거 왜쳤더라 .. 나중에 다시)
