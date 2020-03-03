@@ -50,3 +50,54 @@ reference
 ---
 
 구글해킹 : intitle 관리자 페이지 inurl /admin/ (이거 왜쳤더라 .. 나중에 다시)
+디렉터리 목록 찾기
+intitle:index.of "parent directory"
+intitle:index.of name size
+
+
+admin directory
+intitle:index.of.admin
+intitle:index.of inurl:admin
+
+서버 버전 확인
+intitle:index.of "server at"
+
+특정 서버 버전 찾기
+"intitle:index.of "Apache/1.3.27 Server at" 등
+
+백업 파일 탐색.
+> html 페이지는 소스보기를 통해 볼 수 있지만 php등의 서버 스크립트는 그런 방식으로 볼 수 없다.
+하지만 사본(백업)을 저장해 두고, 그것을 찾을 수 있다면 소스를 확인해볼 수 있다.
+
+intitle:index.of index.php.bak
+inurl:index.php.bak
+
+
+취약 웹 application 정보들
+GHDB : http://www.hackersforcharity.org/ghdb/
+
+error | warning
+에러페이지를 찾는다. 이를 통해 서버에 관한 정보들을 조금이나마 건질 수 있다.
+etc. "access denied for user" "using password"
+
+login | logon
+정문 페이지. 관리자 정보를 습득하고, 사회공학해킹에 이용할 수 있다.
+cf. 실제 서버관리자는 다를 경우 whois 등에서 확인할 수 있다.
+사실 whois를 이용하는게 훨씬 빠르다. 
+기술팀, 관리자, 등록자, 도메인 위치 등을 파악할 수 있다.
+
+username | userid | employee.ID | "your username is"
+
+password | passcode | "your password is"
+
+admin | administrator
+admin | administrator "contact your"
+
+-ext:html,htm,shtml,asp,php,aspx
+흔히 사용하는 페이지 형식을 제외한 페이지들을 검색
+
+inurl:temp,tmp,backup,bak
+
+intranet | help.desk
+
+filetype:reg intext:"internet account manager"
